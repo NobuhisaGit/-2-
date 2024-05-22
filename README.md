@@ -1,1 +1,1 @@
-# AWSコース第2回課題
+# RaiseTech AWSコース
