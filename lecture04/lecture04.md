@@ -3,35 +3,35 @@
 ### 1. VPCの作成
 * ウィザードを利用し、`VPC`、`サブネット`、`ルートテーブル`、`IGW`を構築
 
-   <img src="images/VPC.png" width="500px">
+![VPC](images/VPC.png)
 
 ### 2. EC2およびRDSの構築
 1. EC2
 
 * `パブリックサブネット-1a`上に作成し、さらに`キーペア`を作成
 
-   <img src="images/EC2.png" width="500px">
+![EC2](images/EC2.png)
 
 * セキュリティグループを作成し、インバウンドルールを設定
 
-   <img src="images/EC2-SG_IN.png" width="500px">
+![EC2インバウンドルール](images/EC2-SG_IN.png)
 
 2. RDS
 
 * `プライベートサブネット-1a`および`-1c`からなるサブネットグループを作成し、そのグループ上にRDSを作成
 
-   <img src="images/RDS.png" width="500px">
+![RDS](images/RDS.png)
 
 * RDS用のセキュリティグループを作成し、インバウンドルールを設定
 
-   <img src="images/RDS-SG_IN.png" width="500px">
+![RDSインバウンドルール](images/RDS-SG_IN.png)
 
 ### 3. EC2からRDSへの接続
 1. Tera Termを起動し、EC2のパブリックIPアドレス、ユーザー名、および作成済みのキーペアを入力し、EC2にSSH接続する
 
 2. MySQLをインストールした後、エンドポイントおよびマスターパスワードを入力し、RDSに接続する
 
-   <img src="images/EC2-RDS接続.png" width="500px">
+![EC2-RDS接続](images/EC2-RDS接続.png)
 
 ### 4. 学びと感想
 * 一見シンプルに見えた課題でしたが、いざ取り組んでみると想定以上の苦労の連続でした。（第3回で壁を越える経験をしていなかったら、心が折れていたかもしれません。）EC2-SSH接続、そしてEC2-RDS接続に成功したときはそれぞれ張りつめていたものが解け、体の力が抜けそうな感覚を味わいました。
