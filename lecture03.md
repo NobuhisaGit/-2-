@@ -2,33 +2,33 @@
 
 ### 1. サンプルアプリケーションの起動
 
-   <img src="images/Puma_Boot.png" width="500px">
+![Puma起動](images/Puma_Boot.png)
 
 （ブラウザで起動し、「りんご」を登録した状態）
  
-   <img src="images/Sample.png" width="500px">
+![サンプル登録](images/Sample.png)
 
 ### 2. APサーバーについて
 1. APサーバーの名前およびバージョンの確認
 
    `Puma ver6.4.2`
 
-   <img src="images/Puma.png" width="500px">
+![Pumaバージョン確認](images/Puma.png)
 
 2. APサーバーを終了させた場合のアクセス確認
 
-   <img src="images/Puma_Stop.png" width="500px">
+![Puma終了時確認](images/Puma_Stop.png)
 
 ### 3. DBサーバーについて
 1. DBサーバーの名前およびバージョンの確認
 
    `MySQL ver8.4.0`
    
-   <img src="images/MySQL.png" width="500px">
+![MySQLバージョン確認](images/MySQL.png)
 
 2. DBサーバーを終了させた場合のアクセス確認
 
-   <img src="images/MySQL_Stop.png" width="500px">
+![MySQL終了時確認](images/MySQL_Stop.png)
 
 3. Rails構成管理ツールの名前
 
